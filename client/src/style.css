@@ -1,0 +1,66 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #08090b;
+  --bg-glow-1: rgba(124, 107, 255, 0.13);
+
+  --panel-bg: #121317;
+  --panel-border: #26282f;
+  --panel-border-hover: #383b45;
+
+  --card-bg: #17181d;
+  --card-border: #24262d;
+
+  --text: #f4f4f6;
+  --text-dim: #cfd0d6;
+  --muted: #8b8d97;
+  --faint: #5b5d68;
+
+  --accent: #7c6bff;
+  --accent-2: #5b8cff;
+  --accent-contrast: #ffffff;
+
+  --positive: #34d399;
+  --positive-bg: rgba(52, 211, 153, 0.14);
+  --negative: #f87171;
+  --negative-bg: rgba(248, 113, 113, 0.14);
+  --neutral: #a0a3b1;
+  --neutral-bg: rgba(160, 163, 177, 0.14);
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 32px -12px rgba(0, 0, 0, 0.55);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-color: var(--panel-border) transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1100px 500px at 50% -10%, var(--bg-glow-1), transparent 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
